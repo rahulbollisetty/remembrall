@@ -25,7 +25,7 @@ SECRET_KEY = 'n1nivtl%rjhr=x72i63@bvd-hfnwl#%j22#-!#8#q0l@b98kq='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.ngrok.io','https://hidden-forest-28631.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1','.ngrok.io','.herokuapp.com']
 
 # Application definition
 
