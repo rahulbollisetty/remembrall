@@ -11,13 +11,12 @@ def makecall():
     client = Client(account_sid, auth_token)
 
     call = client.calls.create(
-                            url='http://738d8cf8678f.ngrok.io/voice',
-                            to='+919630880741',
+                            url='https://55ded8e7fb67.ngrok.io/voice',
+                            to='+918319709976',
                             from_='+18477449594'
                         )
 
     print(call.sid)
-makecall()
 # scheduler = BackgroundScheduler(settings.SCHEDULER_CONFIG)
 # def start():
 #     if settings.DEBUG:
