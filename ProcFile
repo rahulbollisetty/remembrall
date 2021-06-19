@@ -1,1 +1,1 @@
-web: gunicorn remembrall.wsgi
+web: gunicorn remembrall.wsgi --log-file -
