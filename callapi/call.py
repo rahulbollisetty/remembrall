@@ -11,13 +11,13 @@ def makecall():
     client = Client(account_sid, auth_token)
 
     call = client.calls.create(
-                            url='https://89170e04ae0a.ngrok.io/voice',
-                            to='+919630880741',
+                            url='https://remembroll.herokuapp.com/voice',
+                            to='+918319709976',
                             from_='+18477449594'
                         )
 
     print(call.sid)
-makecall()
+
 # scheduler = BackgroundScheduler(settings.SCHEDULER_CONFIG)
 # def start():
 #     if settings.DEBUG:
