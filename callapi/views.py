@@ -31,10 +31,10 @@ def home(request):
 @csrf_exempt
 def voice(request):
     resp = VoiceResponse()
-    str1 = "Please take your medicines"
-    resp.say(str1)
+    str1 = "Please take your medicines,"
+    resp.say(str1,language='en-IN')
     gather = Gather(num_digits=1, action='/gather')
-    gather.say("To confirm you have took medicines please press 1")
+    gather.say(",To confirm you have took medicines please press 1",language='en-IN')
     resp.append(gather)
     resp.redirect('/voice')
     return HttpResponse(str(resp))
@@ -53,11 +53,11 @@ def gather(request):
 
         # <Say> a different message depending on the caller's choice
         if choice == '1':
-            resp.say('Thank you for confirming , Take Care, Bye')
+            resp.say('Thank you for confirming , Take Care, Bye',language='en-IN')
             return HttpResponse(str(resp))
         else:
             # If the caller didn't choose 1 or 2, apologize and ask them again
-            resp.say("Sorry, I don't understand that choice.")
+            resp.say("Sorry, I don't understand that choice.",language='en-IN')
 
     # If the user didn't choose 1 or 2 (or anything), send them back to /voice
     # resp.redirect('/voice')
