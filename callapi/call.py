@@ -11,7 +11,7 @@ def makecall():
     client = Client(account_sid, auth_token)
 
     call = client.calls.create(
-                            url='https://55ded8e7fb67.ngrok.io/voice',
+                            url='https://remembroll.herokuapp.com/voice',
                             to='+918319709976',
                             from_='+18477449594'
                         )
