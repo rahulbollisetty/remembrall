@@ -15,7 +15,7 @@ pytz==2021.1
 requests==2.25.1
 screen==1.0.1
 six==1.16.0
-sqlparse==0.4.1
+sqlparse==0.4.2
 twilio==6.60.0
 tzlocal==2.1
 urllib3==1.26.5
